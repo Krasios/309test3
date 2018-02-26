@@ -12,13 +12,13 @@ public class TestWeightConversion {
 		WeightConversion uut = new WeightConversion();
 		double i = 0.454;
 		double result = uut.KilosToPounds(i);
-		assertEquals(1,result,0);
+		assertEquals(1.0,result,0.0);
 	}
 	@Test
 	public void testPoundsToKilosOk() {
 		WeightConversion uut = new WeightConversion();
 		double i = 1;
 		double result = uut.PoundsToKilos(i);
-		assertEquals(0.454,result,0);
+		assertEquals(0.454,result,0.0);
 	}
 }
